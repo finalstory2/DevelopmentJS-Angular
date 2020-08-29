@@ -3,8 +3,9 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styleUrls: ['./style.css']
 })
 export class AppComponent {
-  title = 'Angular-bases';
+  title = 'Jose Gervacio Artigas';
 }
+
