@@ -1,0 +1,6 @@
+ng generate component "name"
+
+//Hooks
+export class CoursesComponent implements OnInit, DoCheck, OnDestroy {
+    DoCheck - Al realizar una accion
+    OnInit -  Al iniciar la aplicacion

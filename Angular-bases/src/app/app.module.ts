@@ -1,7 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { VideogameComponent } from './videogame/videogame.component';
-import { Game } from './game/game.component'
+import { Game } from './game/game.component';
+import { CoursesComponent } from './courses/courses.component';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -10,7 +11,8 @@ import { AppComponent } from './app.component';
   declarations: [
     AppComponent,
     VideogameComponent,
-    Game
+    Game,
+    CoursesComponent
 
   ],
   imports: [

@@ -1,7 +1,18 @@
-<div>
-    {{ title }}
+<div [ngStyle]="{'background': background,
+            'color': color,
+            'padding': '20px',
+            'font-size': '25px',
+            'border': '3px dashed black'}">
+    Title: {{ title }}
+    <br> Description: {{description}}
+    <br> Color: {{color}}
+    <br> Background: {{background}}
 </div>
 <videogame>
 </videogame>
 
-<game></game>
+<game>
+</game>
+
+<CoursesComponent>
+</CoursesComponent>

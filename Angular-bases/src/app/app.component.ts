@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { config } from './models/config';
 
 @Component({
   selector: 'app-root',
@@ -6,6 +7,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./style.css']
 })
 export class AppComponent {
-  title = 'Jose Gervacio Artigas';
+  public title = 'Jose Gervacio Artigas';
+  public description: string;
+  public color: string;
+  public background: string;
+
+  constructor() {
+    this.title = config.title;
+    this.background = config.background;
+    this.color = config.color;
+    this.description = config.description;
+  }
 }
 
