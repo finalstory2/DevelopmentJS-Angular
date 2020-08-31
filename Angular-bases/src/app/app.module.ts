@@ -6,13 +6,15 @@ import { CoursesComponent } from './courses/courses.component';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { TestComponent } from './test/test.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     VideogameComponent,
     Game,
-    CoursesComponent
+    CoursesComponent,
+    TestComponent
 
   ],
   imports: [
