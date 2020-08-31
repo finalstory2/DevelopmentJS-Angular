@@ -20,7 +20,13 @@
         <li>('blur')='FunctionName()</li>
         <li>('keyup.enter')='FunctionName()</li>
     </ul>
-    <input type="text" class="btn btn-danger mt-4" (keyup.k)='nk()'>Nothing personal kid
+    <input type="text" class="btn btn-danger mt-4 mb-3" (keyup.k)='nk()'> Nothing personal kid
+    <hr>
+    <h3 class="mt-3">Styles and other uses:</h3>
+    <ul>
+        <li>([)ngStyle]="Json with atributes written in JS form"</li>
+        <li>([)class.high_price]='condition'</li>
+    </ul>
 
 
 </div>
@@ -44,7 +50,7 @@
                 'text-decoration' : '!deportiva.stock' ? 'line-throught' : 'none'
             }">{{drink.name}}</strong>
             <ul>
-                <li>
+                <li [class.high_price]='drink.price > 104'>
                     Price: $ <strong>{{drink.price}}</strong>
                     <span *ngIf='drink.price <= 102' [ngStyle]="{
                         color: 'green'
