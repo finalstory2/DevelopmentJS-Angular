@@ -13,6 +13,11 @@
                 </li>
                 <li>Branch: {{drink.branch}} </li>
                 <li>Stock units: {{drink.stock}}
+                    <span *ngIf="drink.stock <= 4 && drink.stock >= 2" [ngStyle]="{
+                    color: 'rgba(210, 186, 30, 1)'
+                }">
+                    Be careful, for running out of stock
+                </span>
                     <span *ngIf="drink.stock < 2" class="red" [ngStyle]="{
                     color: 'red'
                 }"> - [Almost out of stock]</span> </li>
@@ -24,7 +29,7 @@
 </div>
 <div class="container second-container">
     <h2>Directives</h2>
-    <p>We starting use the directives</p>
+    <p>We starting use the directives, these are:</p>
     <h3>Directives used:</h3>
     <ul>
         <li>(*)ngFor='let value of listOfValues'</li>
