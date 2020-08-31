@@ -11,6 +11,7 @@ import { DrinkComponent } from './drink/drink.component';
 
 //Two way data binding
 import { FormsModule } from '@angular/forms';
+import { ErrorComponent } from './error/error.component';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import { FormsModule } from '@angular/forms';
     Game,
     CoursesComponent,
     TestComponent,
-    DrinkComponent
+    DrinkComponent,
+    ErrorComponent
 
   ],
   imports: [

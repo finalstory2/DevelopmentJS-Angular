@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Drink } from '../models/drink';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'drink_component',

@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { config } from './models/config';
+import { DrinkComponent } from './drink/drink.component';
+import { CommonModule } from '@angular/common'; 
 
 @Component({
   selector: 'app-root',
