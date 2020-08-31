@@ -17,6 +17,11 @@ export class DrinkComponent implements OnInit {
   //Two way data binding
 
   public my_branch: string;
+  
+  public drink_name: string;
+  public drink_stock: number;
+  public drink_branch: string;
+  public drink_price: number;
 
   constructor() {
     this.names = new Array();
@@ -35,8 +40,8 @@ export class DrinkComponent implements OnInit {
     console.log(this.drinks);
     this.Get_names();
     this.Get_branches();
-    console.log(this.names);
-    console.log(this.branches)
+    // console.log(this.names);
+    // console.log(this.branches)
   }
 
   Get_branches(){
@@ -44,7 +49,7 @@ export class DrinkComponent implements OnInit {
       this.branches.push(drink.branch);
     });
   }
-
+  
   Get_names(){
     this.drinks.forEach((drink, index) => {
       this.names.push(drink.name);
@@ -53,6 +58,10 @@ export class DrinkComponent implements OnInit {
 
   get_branch(){
     alert(this.my_branch);
+  }
+
+  add_drink() {
+    this.drinks.push(new Drink(this.drink_name,this.drink_price,this.drink_branch,this.drink_stock));
   }
 
   add_branch(){

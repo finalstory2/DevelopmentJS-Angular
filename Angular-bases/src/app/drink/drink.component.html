@@ -39,6 +39,17 @@
         <button type="submit" class="btn btn-primary not-block mb-2 mr-1" (click)='add_branch()'>Add branch</button>
     </div>
     <p class="reduced">Text of data binding: {{my_branch}}</p>
+    <p>Add drink</p>
+    <div class="form form-inputs">
+        <input type="text" class="form-control mb-2 not-block mr-2 mb-2" placeholder="Name:" id="exampleInputEmail1" aria-describedby="emailHelp" [(ngModel)]="drink_name">
+        <input type="text" class="form-control mb-2 not-block mr-2 mb-2" placeholder="Price:" id="exampleInputEmail1" aria-describedby="emailHelp" [(ngModel)]="drink_price">
+        <input type="text" class="form-control mb-2 not-block mr-2 mb-2" placeholder="Branch:" id="exampleInputEmail1" aria-describedby="emailHelp" [(ngModel)]="drink_branch">
+        <input type="text" class="form-control mb-2 not-block mr-2 mb-2" placeholder="Stock:" id="exampleInputEmail1" aria-describedby="emailHelp" [(ngModel)]="drink_stock">
+        <div class="form-inline submits">
+            <button type="submit" class="btn btn-primary not-block mb-2 mr-1 " (click)='get_branch()'>Submit</button>
+            <button type="submit" class="btn btn-primary not-block mb-2 mr-1" (click)='add_drink()'>Add Drink</button>
+        </div>
+    </div>
 </div>
 
 <div [ngStyle]="{}" class="container-fluid">
