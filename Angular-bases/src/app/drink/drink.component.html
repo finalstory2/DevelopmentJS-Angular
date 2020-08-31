@@ -1,4 +1,4 @@
-<div class="container second-container">
+<div class="container-fluid second-container">
     <h2>Directives</h2>
     <p>We starting use the directives, these are:</p>
     <h3>Directives used:</h3>
@@ -14,8 +14,21 @@
             </ul>
         </li>
     </ul>
+
+
 </div>
-<div [ngStyle]="{}" class="container">
+<div class="container-fluid third">
+    <h2>Two way data binding</h2>
+    <p>Add branch</p>
+    <div class="form-inline">
+        <input type="text" class="form-control mb-2 not-block mr-2" id="exampleInputEmail1" aria-describedby="emailHelp" [(ngModel)]="my_branch">
+        <button type="submit" class="btn btn-primary not-block mb-2 mr-1 " (click)='get_branch()'>Submit</button>
+        <button type="submit" class="btn btn-primary not-block mb-2 mr-1" (click)='add_branch()'>Add branch</button>
+    </div>
+    <p class="reduced">Text of data binding: {{my_branch}}</p>
+</div>
+
+<div [ngStyle]="{}" class="container-fluid">
     <h2>Dinks</h2>
     <p>Component created for use loops (*)ngFor='let drink of drinks' and clases, the class was export</p>
     <ul>

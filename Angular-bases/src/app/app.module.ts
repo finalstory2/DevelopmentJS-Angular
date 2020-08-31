@@ -9,6 +9,10 @@ import { AppComponent } from './app.component';
 import { TestComponent } from './test/test.component';
 import { DrinkComponent } from './drink/drink.component';
 
+//Two way data binding
+import { FormsModule } from '@angular/forms';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,7 +25,9 @@ import { DrinkComponent } from './drink/drink.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    //Two way data binding
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
