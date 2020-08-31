@@ -59,5 +59,13 @@ export class DrinkComponent implements OnInit {
     this.branches.push(this.my_branch);
     console.log(this.branches);
   }
+
+  delete_name (index){
+    this.names.splice(index, 1)
+  } 
+
+  nk(){
+    alert('Nothing personal kid');
+  }
   
 }
