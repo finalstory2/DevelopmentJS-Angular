@@ -7,6 +7,7 @@ import { CoursesComponent } from './courses/courses.component';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TestComponent } from './test/test.component';
+import { DrinkComponent } from './drink/drink.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { TestComponent } from './test/test.component';
     VideogameComponent,
     Game,
     CoursesComponent,
-    TestComponent
+    TestComponent,
+    DrinkComponent
 
   ],
   imports: [
