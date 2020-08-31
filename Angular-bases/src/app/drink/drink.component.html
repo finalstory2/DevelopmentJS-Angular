@@ -5,10 +5,30 @@
         <li *ngFor='let drink of drinks'>
             {{drink.name}}
             <ul>
-                <li>Price: ${{drink.price}}</li>
-                <li>Branch: {{drink.branch}}</li>
-                <li>Stock units: {{drink.stock}}</li>
+                <li>
+                    Price: $ <strong>{{drink.price}}</strong>
+                    <span *ngIf='drink.price <= 102' [ngStyle]="{
+                        color: 'green'
+                    }"> - [It's a offer!]</span>
+                </li>
+                <li>Branch: {{drink.branch}} </li>
+                <li>Stock units: {{drink.stock}}
+                    <span *ngIf="drink.stock < 2" class="red" [ngStyle]="{
+                    color: 'red'
+                }"> - [Almost out of stock]</span> </li>
+
+
             </ul>
         </li>
+    </ul>
+</div>
+<div class="container second-container">
+    <h2>Directives</h2>
+    <p>We starting use the directives</p>
+    <h3>Directives used:</h3>
+    <ul>
+        <li>(*)ngFor='let value of listOfValues'</li>
+        <li>(*)if='condition'</li>
+        <li>([)ngStyle]="Json with atributes written in JS form"</li>
     </ul>
 </div>
