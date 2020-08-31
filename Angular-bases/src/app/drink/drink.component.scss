@@ -1,0 +1,24 @@
+.container {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: whitesmoke;
+    border-bottom: 2px dashed black;
+    padding: 40px;
+    p {
+        font-size: 22px;
+    }
+    h2 {
+        color: steelblue;
+        font-size: 40px;
+    }
+    li {
+        color: black;
+    }
+    ul {
+        li {
+            font-size: 20px;
+        }
+    }
+}

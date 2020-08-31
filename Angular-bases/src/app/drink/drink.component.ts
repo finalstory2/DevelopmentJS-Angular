@@ -13,7 +13,10 @@ export class DrinkComponent implements OnInit {
 
   constructor() {
     this.drinks = [
-      new Drink('Coke 3lt', 105, 'Coca Cola', 10)
+      new Drink('Coke 3lt', 105, 'Coca Cola', 10),
+      new Drink('Fanta 3lt', 102, 'Coca Cola', 4),
+      new Drink('Fanta pomelo 3lt', 102, 'Coca Cola', 3),
+      new Drink('Sprite', 104, 'Coca Cola', 1)
     ]
    }
 

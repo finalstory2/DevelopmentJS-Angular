@@ -1,1 +1,14 @@
-<p>drink works!</p>
+<div [ngStyle]="{}" class="container">
+    <h2>Dinks</h2>
+    <p>Component created for use loops (*)ngFor='let drink of drinks' and clases, the class was export</p>
+    <ul>
+        <li *ngFor='let drink of drinks'>
+            {{drink.name}}
+            <ul>
+                <li>Price: ${{drink.price}}</li>
+                <li>Branch: {{drink.branch}}</li>
+                <li>Stock units: {{drink.stock}}</li>
+            </ul>
+        </li>
+    </ul>
+</div>
