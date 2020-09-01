@@ -7,10 +7,17 @@ import { MenuComponent } from '../menu/menu.component'
   styleUrls: ['./template.component.scss']
 })
 export class TemplateComponent implements OnInit {
+  public identificado: boolean;
+  constructor() { 
+    this.identificado = false;
+  }
 
-  constructor() { }
+  ngOnInit() {
+    
+  }
 
-  ngOnInit(): void {
+  indentify() {
+    this.identificado = true;
   }
 
 }
