@@ -14,6 +14,7 @@ import { FormsModule } from '@angular/forms';
 import { ErrorComponent } from './error/error.component';
 import { HomeComponent } from './home/home.component';
 import { MenuComponent } from './menu/menu.component';
+import { TemplateComponent } from './template/template.component';
 
 
 @NgModule({
@@ -26,7 +27,8 @@ import { MenuComponent } from './menu/menu.component';
     DrinkComponent,
     ErrorComponent,
     HomeComponent,
-    MenuComponent
+    MenuComponent,
+    TemplateComponent
 
   ],
   imports: [

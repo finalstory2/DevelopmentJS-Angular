@@ -17,6 +17,9 @@ export class ErrorComponent implements OnInit {
     private _router: Router
   ) { }
    
+  redirect(){
+    this._router.navigate(['/drink']);
+  }
 
   ngOnInit() {
     this._route.params.subscribe((params: Params) => {

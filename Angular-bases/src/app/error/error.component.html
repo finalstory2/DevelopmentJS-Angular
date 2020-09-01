@@ -14,8 +14,11 @@
                     Sorry, an error has occured, Requested page not found!
                 </div>
                 <div class="error-actions">
-                    <a routerLinkActive="router-link-active" class="btn btn-primary btn-lg"><span class="glyphicon glyphicon-home"></span>
-                        Take Me Home </a><a href="http://localhost:4444/" class="btn btn-default btn-lg"><span class="glyphicon glyphicon-envelope"></span> Contact Support </a>
+                    <a routerLinkActive="router-link-active" [routerLink]="['/home']" routerLinkActive="router-link-active" class="btn btn-primary btn-lg"><span class="glyphicon glyphicon-home"></span>
+                        Take Me Home </a>
+                    <a href="http://localhost:4444/" class="btn btn-default btn-lg" (click)="redirect()">
+                        <span class="glyphicon glyphicon-envelope"></span> Redirect to Angular.info
+                    </a>
                 </div>
             </div>
         </div>

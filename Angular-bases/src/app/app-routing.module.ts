@@ -3,6 +3,7 @@ import { ModuleWithProviders } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { HomeComponent } from './home/home.component'
+import { TemplateComponent } from './template/template.component'
 
 
 
@@ -17,6 +18,7 @@ const routes: Routes = [
   {path: 'drink', component: DrinkComponent},
   {path: 'error/:errorNumber', component: ErrorComponent},
   {path: 'error', component: ErrorComponent},
+  {path: 'template', component: TemplateComponent},
   {path: '**', component: ErrorComponent}
 ];
 
