@@ -1,5 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 
+//Import components
+import { DrinkComponent } from '../drink/drink.component'
+import { ErrorComponent } from '../error/error.component'
+
 
 @Component({
   selector: 'app-menu',

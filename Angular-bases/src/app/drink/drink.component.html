@@ -7,6 +7,8 @@
     <ul>
         <li>(*)ngFor='let value of listOfValues'</li>
         <li>(*)if='condition'</li>
+        <hr>
+        <h3></h3>
         <li>([)ngStyle]="Json with atributes written in JS form"</li>
         <li>(*)ng-switch='variable'
             <ul>
@@ -22,7 +24,27 @@
         <li>('blur')='FunctionName()</li>
         <li>('keyup.enter')='FunctionName()</li>
     </ul>
-    <input type="text" class="btn btn-danger mt-4 mb-3" (keyup.k)='nk()'> Nothing personal kid
+
+    <h3>Routing:</h3>
+    <ul>
+        <li>([)routerLinkActive]="['active']</li>
+        <ul>
+            <li>RouterlinkActive add a class for the elemen that routing</li>
+            <li>In this case we using active of bootstrap</li>
+        </ul>
+        <hr>
+        <li>([)routerLink]="['/']"</li>
+        <ul>
+            <li>
+                For routing between components
+            </li>
+            <li>
+                It's more visible than use href
+            </li>
+        </ul>
+    </ul>
+
+    <input type="text" class="btn btn-danger mt-4 mb-3" (keyup.k)='nk()' [ngStyle]="{display:'none'}">
     <hr>
     <h3 class="mt-3">Styles and other uses:</h3>
     <ul>

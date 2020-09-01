@@ -39,6 +39,8 @@ export class DrinkComponent implements OnInit {
     ]
    }
 
+  //Change the name of the driknks
+
   ngOnInit(){
     console.log(this.drinks);
     this.Get_names();

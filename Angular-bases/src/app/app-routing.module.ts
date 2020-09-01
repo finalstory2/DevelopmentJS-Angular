@@ -13,6 +13,7 @@ import { ErrorComponent } from './error/error.component'
 //Array of routes
 const routes: Routes = [
   {path: '', component: HomeComponent},
+  {path: 'home', component: HomeComponent},
   {path: 'drink', component: DrinkComponent},
   {path: 'error', component: ErrorComponent},
   {path: '**', component: ErrorComponent}
