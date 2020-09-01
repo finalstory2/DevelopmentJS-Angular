@@ -15,6 +15,7 @@ const routes: Routes = [
   {path: '', component: HomeComponent},
   {path: 'home', component: HomeComponent},
   {path: 'drink', component: DrinkComponent},
+  {path: 'error/:errorNumber', component: ErrorComponent},
   {path: 'error', component: ErrorComponent},
   {path: '**', component: ErrorComponent}
 ];
