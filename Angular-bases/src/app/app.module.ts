@@ -8,6 +8,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TestComponent } from './test/test.component';
 import { DrinkComponent } from './drink/drink.component';
+import { HttpClientModule } from "@angular/common/http";
 
 //Two way data binding
 import { FormsModule } from '@angular/forms';
@@ -39,7 +40,8 @@ import { ServiceComponent } from './service/service.component';
     BrowserModule,
     AppRoutingModule,
     //Two way data binding
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

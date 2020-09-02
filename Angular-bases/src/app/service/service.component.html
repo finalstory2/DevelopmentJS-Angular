@@ -7,8 +7,21 @@
                 In this page we will see the Services on Angular JS
             </p>
             <hr>
-
+            <div>
+                <div class="card align" style="width: 18rem;">
+                    <img src="{{avatar}}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">{{name}}</h5>
+                        <p class="card-text">{{email}}</p>
+                        <input type="text" class='form-control mb-4' name="" id="" [(ngModel)]="userId" (blur)='loadUser()'>
+                        <div class="text-center" *ngIf='!user'>
+                            Loading . . .
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+
 
         <!-- <p class="lead">Jumbo helper text</p>
             <hr class="my-2">
