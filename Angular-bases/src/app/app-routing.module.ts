@@ -4,6 +4,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { HomeComponent } from './home/home.component'
 import { TemplateComponent } from './template/template.component'
+import { ServiceComponent } from './service/service.component'
 
 
 
@@ -19,6 +20,7 @@ const routes: Routes = [
   {path: 'error/:errorNumber', component: ErrorComponent},
   {path: 'error', component: ErrorComponent},
   {path: 'template', component: TemplateComponent},
+  {path: 'service', component: ServiceComponent},
   {path: '**', component: ErrorComponent}
 ];
 

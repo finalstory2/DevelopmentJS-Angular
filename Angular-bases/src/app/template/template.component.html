@@ -4,13 +4,18 @@
         <h1 class="display-3">Templates</h1>
         <p class="lead">Temlates are a directives that can use If and Else, may be template can be use for the logins.</p>
         <hr class="my-2">
-        <div *ngIf="identificado; else noidentificado">
+        <div *ngIf="identificado;then noidentificado2 else noidentificado">
             <h2 class="lead"><strong>NGIF</strong> - You are identify in the aplication</h2>
         </div>
         <ng-template #noidentificado>
             <h2 class="lead"><strong>NG-Template</strong> - You aren't identify in the aplicantion, please, press the follow button to be.</h2>
             <a name="" id="" (click)="indentify()" class="btn btn-primary" role="button">Identify</a>
             <!-- <button (click)="indentify()"></button> -->
+        </ng-template>
+
+        <ng-template #noidentificado2>
+            <h2 class="lead"><strong>NG-Template Then</strong> - You aren't identify in the aplicantion, please, press the follow button to be.</h2>
+            <a name="" id="" (click)="indentify()" class="btn btn-primary" role="button">Identify</a>
         </ng-template>
         <!-- <p>More info</p>
         <p class="lead">

@@ -68,7 +68,7 @@
                     "builder": "@angular-devkit/build-angular:dev-server",
                     "options": {
                         "browserTarget": "Angular-bases:build",
-                        "port": 4445
+                        "port": 4460
                     },
 
                     "configurations": {
