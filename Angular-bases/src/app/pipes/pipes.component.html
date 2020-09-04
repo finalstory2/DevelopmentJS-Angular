@@ -4,7 +4,7 @@
     <p class="lead text-center">
         In this page we will see the Pipes on Angular JS
     </p>
-    <h3 class="display-3 text-center" [ngStyle]='{
+    <h3 class="display-4 text-center" [ngStyle]='{
         margin: "100px"
     }'>
         Date pipes
@@ -28,4 +28,10 @@
             Full date with lowercase: {{date | date:'fullDate' | lowercase}}
         </h2>
     </h3>
+    <h3 class="display-4 text-center">
+        Custom Pipes
+    </h3>
+    <h2 class="lead text-center">
+        Custom pipe: {{ 4 | calculadora: 2}}
+    </h2>
 </div>

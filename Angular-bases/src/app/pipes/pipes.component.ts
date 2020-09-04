@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MenuComponent } from '../menu/menu.component';
+import { CalculadoraPipe } from './calculadora.pipe'
 
 @Component({
   selector: 'app-pipes',
