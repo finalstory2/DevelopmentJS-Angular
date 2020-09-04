@@ -18,7 +18,8 @@ import { MenuComponent } from './menu/menu.component';
 import { TemplateComponent } from './template/template.component';
 import { ServiceComponent } from './service/service.component';
 import { PipesComponent } from './pipes/pipes.component';
-import { CalculadoraPipe }  from './pipes/calculadora.pipe'
+import { CalculadoraPipe }  from './pipes/calculadora.pipe';
+import { FormsComponent } from './forms/forms.component'
 // import { SwordComponent } from './sword/sword.component';
 
 
@@ -36,7 +37,8 @@ import { CalculadoraPipe }  from './pipes/calculadora.pipe'
     TemplateComponent,
     ServiceComponent,
     PipesComponent,
-    CalculadoraPipe
+    CalculadoraPipe,
+    FormsComponent
     // SwordComponent
 
   ],

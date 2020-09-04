@@ -6,6 +6,7 @@ import { HomeComponent } from './home/home.component'
 import { TemplateComponent } from './template/template.component'
 import { ServiceComponent } from './service/service.component'
 import { PipesComponent } from './pipes/pipes.component'
+import { FormsComponent } from './forms/forms.component' 
 
 
 //Import components
@@ -22,6 +23,7 @@ const routes: Routes = [
   {path: 'template', component: TemplateComponent},
   {path: 'service', component: ServiceComponent},
   {path: 'pipes', component: PipesComponent},
+  {path: 'forms', component: FormsComponent},
   {path: '**', component: ErrorComponent}
 ];
 
