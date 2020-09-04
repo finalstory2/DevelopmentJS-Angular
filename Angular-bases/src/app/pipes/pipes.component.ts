@@ -8,9 +8,14 @@ import { MenuComponent } from '../menu/menu.component';
 })
 export class PipesComponent implements OnInit {
 
+  public date: any;
+
   constructor() { }
 
   ngOnInit(): void {
+
+    this.date = new Date(2020,9,4);
+
   }
 
 }
