@@ -5,7 +5,7 @@ import { CommonModule } from '@angular/common';
 import { HomeComponent } from './home/home.component'
 import { TemplateComponent } from './template/template.component'
 import { ServiceComponent } from './service/service.component'
-
+import { PipesComponent } from './pipes/pipes.component'
 
 
 //Import components
@@ -21,6 +21,7 @@ const routes: Routes = [
   {path: 'error', component: ErrorComponent},
   {path: 'template', component: TemplateComponent},
   {path: 'service', component: ServiceComponent},
+  {path: 'pipes', component: PipesComponent},
   {path: '**', component: ErrorComponent}
 ];
 
