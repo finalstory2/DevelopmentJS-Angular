@@ -9,7 +9,6 @@ const bodyParser = require('body-parser');
 
 
 //Middlewares
-
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
@@ -17,6 +16,13 @@ app.use(bodyParser.json());
 
 
 //Routes
+
+app.get('/', cors(), (req, res) =>
+    res.status(200).send(
+        "<h1>Homepage</h1>"
+    )
+);
+
 app.post('/creator'), cors(), (req, res) => {
     console.log(req.body.name);
     console.log(req);
