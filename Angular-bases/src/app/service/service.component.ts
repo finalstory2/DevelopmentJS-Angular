@@ -76,13 +76,15 @@ export class ServiceComponent implements OnInit {
   onSubmit(form){
     this._requestService.addUser(this.new_user).subscribe(
       response => {
-        console.log(response);
+        this.saved_user = response;
+        console.log(this.saved_user);
+        form.reset();
       },
       error => {
         console.log(<any>error);
       }
     );
-    form.reset();
+
   }
 
 }
