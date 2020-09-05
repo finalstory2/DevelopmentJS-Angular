@@ -21,7 +21,45 @@
                 </div>
             </div>
         </div>
+        <hr>
+        <hr>
+        <hr>
+        <h3 class="display-4 text-center">
+            Create new user with http-ayax-reqres
+        </h3>
+        <div class="conteiner-fluid">
+            <div class="row">
+                <div class="col-3"></div>
+                <div class="col-6">
+                    <form #formContact='ngForm' (ngSubmit)="onSubmit(newUser)">
+                        <div class="form-group mt-5">
+                            <label for="Name">Name</label>
+                            <input type="text" #name="ngModel" name='name' [ngModelOptions]="{standalone: true}" [(ngModel)]="new_user.name" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required pattern='[a-zA-Z]'>
+                            <small id="emailHelp" *ngIf="name.touched && !name.valid" class="form-text text-muted ">
+                                The name is obligatory
+                            </small>
+                        </div>
+                        <div class="form-group ">
+                            <label for="exampleInputPassword1 ">Job</label>
+                            <input type="text" #job="ngModel" [ngModelOptions]="{standalone: true}" [(ngModel)]="new_user.job" class="form-control" id="job" aria-describedby="emailHelp" required>
+                            <small id="emailHelp" *ngIf="job.touched && !job.valid" class="form-text text-muted ">
+                                The job is obligatory
+                            </small>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
 
+                </div>
+                <div class="col-3"></div>
+            </div>
+            <div class="row">
+                <div class="col-4"></div>
+                <div class="col-4">
+                    <div *ngIf=""></div>
+                </div>
+                <div class="col-4"></div>
+            </div>
+        </div>
 
         <!-- <p class="lead">Jumbo helper text</p>
             <hr class="my-2">

@@ -1,1 +1,75 @@
 <app-menu></app-menu>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-1"></div>
+        <div class='col-4'>
+            <div class="display-4 mb-2"> Form contact</div>
+            <br>
+            <form #formContact='ngForm' (ngSubmit)="feature_contact()">
+                <div class="form-group mt-5">
+                    <label for="Name">Name</label>
+                    <input type="text" #name="ngModel" name='name' [ngModelOptions]="{standalone: true}" [(ngModel)]="ContactUser.name" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required pattern='[a-zA-Z]'>
+                    <small id="emailHelp" *ngIf="name.touched && !name.valid" class="form-text text-muted ">
+                        The name is obligatory
+                    </small>
+                </div>
+                <div class="form-group ">
+                    <label for="exampleInputPassword1 ">Company</label>
+                    <input type="text" #company="ngModel" [ngModelOptions]="{standalone: true}" [(ngModel)]="ContactUser.company" class="form-control" id="email" aria-describedby="emailHelp" required>
+                    <small id="emailHelp" *ngIf="company.touched && !company.valid" class="form-text text-muted ">
+                        The company is obligatory
+                    </small>
+                </div>
+                <div class="form-group ">
+                    <label for="emial">Email address</label>
+                    <input #email="ngModel" [ngModelOptions]="{standalone: true}" [(ngModel)]="ContactUser.email" type="email" class="form-control" id="email" aria-describedby="emailHelp " required>
+                    <small id="emailHelp" *ngIf="email.touched && !email.valid" class="form-text text-muted ">
+                        The email is obligatory
+                    </small>
+                    <label for="messague ">Messague</label>
+                    <textarea #messague="ngModel" [ngModelOptions]="{standalone: true}" [(ngModel)]=" ContactUser.messague " class="form-control" id=" " rows="5 " required></textarea>
+                    <small id="emailHelp" *ngIf="messague.touched && !messague.valid" class="form-text text-muted ">
+                        The messague is obligatory
+                    </small>
+                </div>
+                <div class="errors alert-success" id="errors">
+                    Enviado correctamente
+                </div>
+                <button type="submit" (ngSubmit)="show_errors()" class="btn btn-primary ">Submit</button>
+            </form>
+        </div>
+        <div class="col-1 "></div>
+        <div class="col-5 ">
+            <div class="display-4 mb-2 "> Angular directives</div>
+            <br><br>
+            <ul class="lead ">
+                <li>
+                    #formContact='ngForm'
+                    <ul>
+                        <li>
+                            <p>With this Angular understand what is a form of angular</p>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    (ngSubmit) = "functionContact() "
+                    <ul>
+                        <p>When the button submit is press call a method called functionContact()</p>
+                    </ul>
+                </li>
+                <li>
+                    #name="ngModel" - ([)(ngModel)]="ContactUser.company"
+                    <ul>
+                        <p>
+                            #name="ngModel" - For use ngmodel and capture the values in the inputs
+                        </p>
+                        <p>
+                            ([)(ngModel)]="ContactUser.company" - For capture the data writed in the inputs
+                        </p>
+                    </ul>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+</div>

@@ -17,12 +17,15 @@ import { requestService } from '../services/requests.service'
   providers: [SwordService, requestService]
 })
 export class ServiceComponent implements OnInit {
+  public new_user: any;
   public name: String;
+  public newUser: any;
   public avatar: String;
   public email: String;
   swords: Array<sword>;
   public userId: any;
   public user: any;
+  public saved_user: any;
 
 
   constructor(
@@ -30,6 +33,10 @@ export class ServiceComponent implements OnInit {
     private _requestService: requestService
   ) { 
     this.userId = 1;
+    this.new_user = {
+      "name": "",
+      "job": ""
+    }
   }
 
   ngOnInit(): void {
@@ -64,6 +71,18 @@ export class ServiceComponent implements OnInit {
     this.swords.forEach((value, index) => {
       console.log(this.swords[index]);
     })
+  }
+
+  onSubmit(form){
+    this._requestService.addUser(this.new_user).subscribe(
+      response => {
+        console.log(response);
+      },
+      error => {
+        console.log(<any>error);
+      }
+    );
+    form.reset();
   }
 
 }
