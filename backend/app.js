@@ -24,8 +24,13 @@ app.get('/', cors(), (req, res) =>
 );
 
 app.post('/creator'), cors(), (req, res) => {
+    res.status(200).send({
+        message: "idk"
+    });
     console.log(req.body.name);
     console.log(req);
+
+
 }
 
 app.get('/creator', cors(), (req, res) =>
