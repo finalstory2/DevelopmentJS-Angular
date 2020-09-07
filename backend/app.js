@@ -23,25 +23,10 @@ app.get('/', cors(), (req, res) =>
     )
 );
 
-app.post('/creator'), cors(), (req, res) => {
-    res.status(200).send({
-        message: "idk"
-    });
-    console.log(req.body.name);
-    console.log(req);
+//Routes with controller
 
-
-}
-
-app.get('/creator', cors(), (req, res) =>
-    res.status(200).send({
-        messague: 'maciel galeano, finalstory2'
-    })
-);
-
+var project_routes = require('./routes/project');
+app.use('/api', project_routes);
 
 //exports
 module.exports = app;
-
-
-//Idoknos
